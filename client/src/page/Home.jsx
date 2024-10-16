@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+/* eslint react/prop-types: 0 */
+import { useEffect, useState } from 'react';
 
 import { Card, FormField, Loader } from '../components';
 
@@ -26,7 +27,7 @@ const Home = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('https://dalle-arbb.onrender.com/api/v1/post', {
+      const response = await fetch('https://dallex-1.onrender.com/api/v1/post', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
